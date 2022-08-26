@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(50% 50% at 50% 50%, #242d41 0%, #1d2332 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav ul li {
+  @apply relative pl-16 cursor-pointer transition-all;
+}
+nav ul li::after {
+  @apply absolute w-14 h-[1px] bg-white left-0 top-1/2 -translate-y-1/2 transition-all;
+  content: "";
+}
+
+nav ul li:hover::after {
+  @apply w-20;
+}
+
+nav ul li:hover {
+  @apply pl-20;
+}
