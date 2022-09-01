@@ -34,7 +34,7 @@ const Particales = () => {
           outMode: "out",
           random: true,
           size: true,
-          speed: 0.2,
+          speed: 0.5,
           straight: false,
         },
         number: { density: { enable: true, area: 500 }, value: 100 },

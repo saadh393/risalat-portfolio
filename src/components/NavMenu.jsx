@@ -1,33 +1,35 @@
+import { Link } from "react-router-dom";
+
 const NavMenu = () => {
   return (
     <nav className="h-full fixed left-0 z-[4]">
-      <ul className="h-full flex flex-col justify-center gap-10">
+      <ul className="h-full flex flex-col justify-center">
         <li>
-          <a href="#">Home</a>
+          <Link to="/">Home</Link>
         </li>
 
         <li>
-          <a href="#">About</a>
+          <a href="/about">About</a>
         </li>
 
         <li>
-          <a href="#">Education</a>
+          <Link to="/Education">Education</Link>
         </li>
 
         <li>
-          <a href="#">Experience</a>
+          <Link to="/Experience">Experience</Link>
         </li>
 
         <li>
-          <a href="#">Achievement</a>
+          <Link to="/Achievement">Achievement</Link>
         </li>
 
         <li>
-          <a href="#">Publication</a>
+          <Link to="/Publication">Publication</Link>
         </li>
 
         <li>
-          <a href="#">Get In Touch</a>
+          <Link to="/GetInTouch">Get In Touch</Link>
         </li>
       </ul>
     </nav>

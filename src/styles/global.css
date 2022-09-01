@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #94a3b8;
+}
+
 body {
   background: radial-gradient(50% 50% at 50% 50%, #242d41 0%, #1d2332 100%);
   background-repeat: no-repeat;
@@ -9,17 +26,36 @@ body {
 }
 
 nav ul li {
-  @apply relative pl-16 cursor-pointer transition-all;
+  @apply relative pl-8 cursor-pointer transition-all text-xs text-[#C7C7C7] py-6;
 }
 nav ul li::after {
-  @apply absolute w-14 h-[1px] bg-white left-0 top-1/2 -translate-y-1/2 transition-all;
+  @apply absolute w-6 h-[1px] bg-[#C7C7C7] left-0 top-1/2 -translate-y-1/2 transition-all;
   content: "";
 }
 
 nav ul li:hover::after {
-  @apply w-20;
+  @apply w-10 bg-white;
 }
 
 nav ul li:hover {
-  @apply pl-20;
+  @apply pl-14 text-white;
 }
+
+/* Timeline  */
+.process .timeline {
+  /* position: relative; */
+}
+
+.process .timeline:last-child::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(7px) translateY(8px);
+}
+
+/* div > .timeline:last-child {
+  display: none;
+  height: 1px;
+} */
