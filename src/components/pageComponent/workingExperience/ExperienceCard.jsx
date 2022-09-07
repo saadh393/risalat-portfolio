@@ -5,8 +5,8 @@ const ExperienceCard = ({ index }) => {
   let bgColor = index % 2 == 1 ? "bg-[#112D71]/10" : "bg-[#FD3259]/20";
   let border = index % 2 == 1 ? "border-[#0A4DF3]/20" : "border-[#FD3259]/20";
   return (
-    <div className="flex gap-5 items-center mt-8 relative">
-      <div className="w-[100px] h-[100px] overflow-hidden rounded-md">
+    <div className="flex gap-3 md:gap-5 items-center relative">
+      <div className="w-[70px] h-[70px] md:w-[100px] md:h-[100px] overflow-hidden rounded-md">
         <img className="w-full h-full object-cover" src={Image} />
       </div>
 

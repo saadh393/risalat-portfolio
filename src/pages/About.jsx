@@ -2,10 +2,10 @@ import React from "react";
 
 function About() {
   return (
-    <div className="flex flex-col items-center h-full py-8 overflow-hidden">
-      <h3 className="text-center text-[#FFCC30] uppercase text-2xl">More AbouT</h3>
+    <div className="flex flex-col items-center h-full py-10 ">
+      <h3 className="text-center text-[#FFCC30] uppercase text-2xl mt-10">More AbouT</h3>
       <h1 className="text-center text-white font-bold text-4xl ">Risalat Siddique</h1>
-      <div className="mx-auto py-3 h-full overflow-y-scroll">
+      <div className="mx-auto py-3 h-full overflow-y-scroll mt-10">
         <p>
           "Impossible"- a word we come across so often that I decided to spend some time trying to understand the
           meaning. Dictionary says, "it is an unattainable task", then I looked closer and found my purpose "I'm

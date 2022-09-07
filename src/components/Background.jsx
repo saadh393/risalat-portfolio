@@ -3,7 +3,7 @@ import Particales from "./Particales";
 const Background = () => {
   return (
     <div
-      className="min-h-screen w-full h-full overflow-hidden fixed left-0 top-0 z-0 bg-[#242D41]"
+      className="min-h-screen w-full h-full overflow-hidden fixed left-0 top-0 z-0 bg-[#121F3A]"
       style={{ background: "radial-gradient(51.91% 51.91% at 50% 48.09%, #242D41 0%, #1D2332 100%);" }}
     >
       {/* top Red Overlay */}

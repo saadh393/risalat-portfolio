@@ -6,15 +6,15 @@ import heroPicture from "../images/risalat-siddik.png";
 
 function Home() {
   return (
-    <div className="grid grid-cols-2 items-center">
-      <div className="w-full">
-        <h3 className="text-sm text-slate-200 ">Hello I am</h3>
-        <h1 className="text-slate-50 font-black text-4xl">Risalat Siddique</h1>
-        <p className="text-sm text-slate-200 font-light mt-4 leading-6">
+    <div className="flex flex-col-reverse md:flex-row items-center">
+      <div className="w-full flex-1">
+        <h3 className="text-base text-slate-200 ">Hello I am</h3>
+        <h1 className="text-slate-50 font-black text-5xl my-6">Risalat Siddique</h1>
+        <p className="text-base text-slate-200 font-light leading-6">
           Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development
           Sectors
         </p>
-        <ul className="flex gap-2 my-4">
+        <ul className="flex gap-2 my-6">
           <li>
             <a href="#">
               <Facebook />
@@ -36,7 +36,7 @@ function Home() {
       </div>
 
       {/* Image */}
-      <div>
+      <div className="flex-1">
         <img src={heroPicture} alt="Risalat Siddik" />
       </div>
     </div>
