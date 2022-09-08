@@ -8,11 +8,11 @@ const Hamburger = () => {
       height="100%"
       viewBox="0 0 16 15"
       data-state="closed"
-      class="mr-4 md:hidden block z-[99] relative"
+      className="mr-4 md:hidden block z-[99] relative"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
-        class="transition-all"
+        className="transition-all"
         id="one"
         x="6.85144"
         y="1.23901"
@@ -22,7 +22,7 @@ const Hamburger = () => {
         fill="#fff"
       ></rect>
       <rect
-        class="transition-all"
+        className="transition-all"
         id="two"
         x="0.193237"
         y="7.26367"
@@ -33,7 +33,7 @@ const Hamburger = () => {
         transform="rotate(0 0 0)"
       ></rect>
       <rect
-        class="transition-all"
+        className="transition-all"
         id="three"
         x="4.2196"
         y="13.2584"

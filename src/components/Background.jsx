@@ -4,7 +4,7 @@ const Background = () => {
   return (
     <div
       className="min-h-screen w-full h-full overflow-hidden fixed left-0 top-0 z-0 bg-[#121F3A]"
-      style={{ background: "radial-gradient(51.91% 51.91% at 50% 48.09%, #242D41 0%, #1D2332 100%);" }}
+      style={{ background: "radial-gradient(51.91% 51.91% at 50% 48.09%, #242D41 0%, #1D2332 100%)" }}
     >
       {/* top Red Overlay */}
       <div className="w-[300px] h-[300px] z-[1] bg-[#FA3A3A] rounded-full -top-28 right-20 blur-3xl opacity-20 absolute"></div>
