@@ -1,6 +1,6 @@
-export const DOMAIN = "https://strapi-risalat-siddik.herokuapp.com";
+export const DOMAIN = "https://api.risalatsiddique.com";
 export const AUTH =
-  "Bearer ef16088e6bc468b460b8625ec2b105f40653c8145b9499a3d380ee071fead5c373573a913d19fd734f86b43c975bc8b2784269ac73d09e542d98f9dfdf7148fecfc0bc8859f0c4e74ee14b8b682b5c4cccac3b1bb7bb4f877ab0c17e3403e1a9d71fb809e41529d7393226be8de74140363c6eafe57883d148062a7006b91ccf";
+  "Bearer ad71cdc972f849e905176ddcd6990da8621c7717041789bd9649ea5ad9de2b4fe37446a772ac79f0355353614594f47486f15a5bb0907512ecc07c58a7760c80343f681bc06f4b329e9ff91fa852ced86c1eada871e3af0572465aeb36aa095058141c9145500bd01ea3c2363528ddc6c39668caa304f03c2e790a6b6e5aea38";
 
 export const getYear = (year) => {
   return new Date(year).getUTCFullYear();
