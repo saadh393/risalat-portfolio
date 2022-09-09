@@ -11,7 +11,7 @@ function Home() {
         <h3 className="text-base text-slate-200 ">Hello I am</h3>
         <h1 className="text-slate-50 font-black text-5xl my-6">Risalat Siddique</h1>
         <p className="text-base text-slate-200 font-light leading-6">
-          Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development
+          Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social & Infrastructure Development
           Sectors
         </p>
         <ul className="flex gap-2 my-6">
