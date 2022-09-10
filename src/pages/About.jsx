@@ -1,11 +1,19 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 function About() {
   return (
-    <div className="flex flex-col items-center h-full py-10 ">
+    <motion.div
+      key={"about"}
+      className="flex flex-col items-center h-full py-10 "
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, scale: 0 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+    >
       <h3 className="text-center text-[#FFCC30] uppercase text-2xl mt-10">More AbouT</h3>
       <h1 className="text-center text-white font-bold text-4xl ">Risalat Siddique</h1>
-      <div className="mx-auto py-3 h-full overflow-y-scroll mt-10">
+      <motion.div className="mx-auto py-3 h-full overflow-y-scroll mt-10">
         <p>
           "Impossible"- a word we come across so often that I decided to spend some time trying to understand the
           meaning. Dictionary says, "it is an unattainable task", then I looked closer and found my purpose "I'm
@@ -42,8 +50,8 @@ function About() {
           is Impossible" with the right amount of zeal. Working towards digital transformation for the base of pyramid
           consumers can be a brilliant way of life!
         </p>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

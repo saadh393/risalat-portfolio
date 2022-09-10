@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Award from "../../../components/Award";
 
@@ -8,7 +9,10 @@ const AchievementCard = ({ index, data }) => {
   const { title, description, award_type } = data;
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: index * 0.2, ease: "linear" }}
       className={`cursor-pointer flex flex-col items-center max-w-xs h-fit py-8 px-4 mt-4 ${bgColor} hover:shadow-lg rounded-md backdrop-blur border ${border} transition-transform hover:scale-105`}
     >
       <div className="w-[50px]">
@@ -17,7 +21,7 @@ const AchievementCard = ({ index, data }) => {
       <p className="text-sm text-[#B2B2B2] mt-6">{award_type}</p>
       <h1 className="text-base mt-2 font-bold text-center">{title}</h1>
       <p className="text-sm mt-2 font-light text-center">{description}</p>
-    </div>
+    </motion.div>
   );
 };
 

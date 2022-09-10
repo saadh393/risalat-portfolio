@@ -1,33 +1,28 @@
-import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import React, { useContext } from "react";
 import PublicationCard from "../components/pageComponent/Publications/PublicationCard";
-import { AUTH, DOMAIN } from "../Util";
+import { ApplicationContext } from "../Routes";
 
 function Publications() {
-  const [publications, setPublications] = useState([]);
-  useEffect(() => {
-    fetch(DOMAIN + "/api/publications?populate=thumbnail", {
-      method: "get",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: AUTH,
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data);
-        setPublications(data.data);
-      });
-  }, []);
+  const { publications } = useContext(ApplicationContext);
 
   return (
-    <div className="flex flex-col items-center h-full py-10 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center h-full py-10 "
+    >
       <h1 className="text-center text-white font-bold text-4xl mt-10">Publications</h1>
 
       <div className="mx-auto mt-10 justify-center lg:justify-between gap-x-5 gap-5 px-2 flex flex-wrap gap-y-10">
         {publications &&
-          publications.map((publication) => <PublicationCard key={publication.id} data={publication.attributes} />)}
+          publications.map((publication, index) => (
+            <PublicationCard key={publication.id} data={publication.attributes} index={index} />
+          ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

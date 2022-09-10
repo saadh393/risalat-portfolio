@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { getYear } from "../../../Util";
 
@@ -9,7 +10,10 @@ const EducationCard = ({ index, data }) => {
   const { institute, start_date, end_date, description } = data.attributes;
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: index * 0.2, ease: "linear" }}
       className={`cursor-pointer py-4 px-4 ${bgColor} hover:shadow-lg  rounded-md backdrop-blur border ${border} transition-transform hover:scale-105`}
     >
       <h4 className="text-xs  text-[#AAAAAA]">
@@ -17,7 +21,7 @@ const EducationCard = ({ index, data }) => {
       </h4>
       <h1 className="text-base font-bold mt-2">{institute}</h1>
       <p className="text-sm mt-2 font-light">{description}</p>
-    </div>
+    </motion.div>
   );
 };
 

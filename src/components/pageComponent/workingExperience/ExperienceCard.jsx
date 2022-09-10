@@ -1,4 +1,7 @@
+import { motion } from "framer-motion";
 import React from "react";
+import ProgressiveImage from "react-progressive-image-loading";
+import LoadingGif from "../../../../public/images/loading.gif";
 import { DOMAIN, getMonth, getYear } from "../../../Util";
 
 const ExperienceCard = ({ index, data }) => {
@@ -6,17 +9,35 @@ const ExperienceCard = ({ index, data }) => {
   let border = index % 2 == 1 ? "border-[#0A4DF3]/20" : "border-[#FD3259]/20";
 
   const { designation, start_date, end_date, description, company_name, company_website, company_logo } = data;
-  const { url } = company_logo.data.attributes;
+  const { url } = company_logo?.data?.attributes;
 
   return (
-    <div className="flex gap-3 md:gap-5 items-center relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      // transition={{ delay: index * 0.2, ease: "linear" }}
+      className="flex gap-3 md:gap-5 items-center relative"
+    >
       <a
         href={company_website}
         title={company_name}
         target="_blank"
         className="w-[70px] h-[70px] md:w-[100px] md:h-[100px] overflow-hidden rounded-md"
       >
-        <img className="w-full h-full object-cover" src={DOMAIN + url} />
+        <ProgressiveImage
+          preview={LoadingGif}
+          src={DOMAIN + url}
+          transitionTime={500}
+          transitionFunction="ease"
+          render={(src) => (
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="w-full h-full object-cover"
+              src={src}
+            />
+          )}
+        />
       </a>
 
       <div className="timeline">
@@ -35,7 +56,7 @@ const ExperienceCard = ({ index, data }) => {
         </h4>
         <p className="text-sm mt-2 font-light leading-6">{description}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

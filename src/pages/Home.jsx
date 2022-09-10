@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Email from "../components/SocialMedia/Email";
 import Facebook from "../components/SocialMedia/Facebook";
@@ -7,7 +8,13 @@ import heroPicture from "../images/risalat-siddik.png";
 function Home() {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center">
-      <div className="w-full flex-1">
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-full flex-1"
+      >
         <h3 className="text-base text-slate-200 ">Hello I am</h3>
         <h1 className="text-slate-50 font-black text-5xl my-6">Risalat Siddique</h1>
         <p className="text-base text-slate-200 font-light leading-6">
@@ -33,12 +40,18 @@ function Home() {
             </a>
           </li>
         </ul>
-      </div>
+      </motion.div>
 
       {/* Image */}
-      <div className="flex-1">
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex-1"
+      >
         <img src={heroPicture} alt="Risalat Siddik" />
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -23,3 +23,5 @@ export const getMonth = (year) => {
   ];
   return monthNames[new Date(year).getUTCMonth()];
 };
+
+export const notFound_600x400 = "https://dummyimage.com/600x400/031f47/ffffff&text=Image+not+found";
