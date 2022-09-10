@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import ProgressiveImage from "react-progressive-image-loading";
-import LoadingGif from "../../../../public/images/loading.gif";
+import LoadingGif from "../../../images/loading.gif";
 import { DOMAIN, getMonth, getYear } from "../../../Util";
 
 const ExperienceCard = ({ index, data }) => {
