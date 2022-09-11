@@ -16,9 +16,9 @@ function Home() {
         transition={{ duration: 0.5 }}
         className="w-full flex-1"
       >
-        <h3 className="text-base text-slate-200 ">Hello I am</h3>
-        <h1 className="text-slate-50 font-black text-5xl my-6">Risalat Siddique</h1>
-        <p className="text-base text-slate-200 font-light leading-6">
+        <h3 className="text-base lg:text-xl text-slate-200 ">Hello I am</h3>
+        <h1 className="text-slate-50 font-black text-5xl my-4">Risalat Siddique</h1>
+        <p className="text-base lg:text-lg text-slate-200 font-light leading-6">
           Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development
           Sectors
         </p>
