@@ -59,7 +59,7 @@ function Home() {
         transition={{ duration: 0.5 }}
         className="flex-1"
       >
-        <img src={heroPicture} alt="Risalat Siddik" />
+        <img src={heroPicture} alt="Risalat Siddik" width="400px" />
       </motion.div>
     </div>
   );
