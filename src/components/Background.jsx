@@ -17,6 +17,7 @@ const Background = () => {
         className="absolute left-0 bottom-0 object-contain z-[1] select-none"
         style={{ filter: "drop-shadow(0px -18px 80px rgba(10,77,243,.35))" }}
         src="./images/overlay/earth.png"
+        alt="Earth Image Background"
       />
       <div
         className="w-[250px] h-[150px] rounded-full absolute bottom-0 left-1/2 -translate-x-1/2 "

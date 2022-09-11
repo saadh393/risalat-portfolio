@@ -23,13 +23,21 @@ function Home() {
         </p>
         <ul className="flex gap-2 my-6">
           <li>
-            <a href="#">
+            <a
+              href="https://web.facebook.com/siddique.risalat"
+              target="_blank"
+              title="Risalat Siddique Facebook Profile"
+            >
               <Facebook />
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/risalat-siddique/"
+              target="_blank"
+              title="Risalat Siddique Linkedin Profile"
+            >
               <Linkedin />
             </a>
           </li>
