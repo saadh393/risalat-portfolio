@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { lazy, Suspense, useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { getAchievements, getEducations, getExperiences, getPublications } from "./dataFetch/data";
-import About from "./pages/About";
-import Achievement from "./pages/Achievement";
-import Education from "./pages/Education";
-import GetInTouch from "./pages/GetInTouch";
-import Home from "./pages/Home";
-import Publications from "./pages/Publications";
-import WorkingExperience from "./pages/WorkingExperience";
+const About = lazy(() => import("./pages/About"));
+const Achievement = lazy(() => import("./pages/Achievement"));
+const GetInTouch = lazy(() => import("./pages/GetInTouch"));
+const Home = lazy(() => import("./pages/Home"));
+const Publications = lazy(() => import("./pages/Publications"));
+const WorkingExperience = lazy(() => import("./pages/WorkingExperience"));
+const Education = lazy(() => import("./pages/Education"));
 
 export const ApplicationContext = React.createContext();
 
@@ -36,12 +36,54 @@ const ApplicationRoutes = () => {
     <ApplicationContext.Provider value={state}>
       <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="Education" element={<Education />} />
-        <Route path="Experience" element={<WorkingExperience />} />
-        <Route path="Achievement" element={<Achievement />} />
-        <Route path="Publication" element={<Publications />} />
-        <Route path="GetInTouch" element={<GetInTouch />} />
+        <Route
+          path="about"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <About />
+            </Suspense>
+          }
+        />
+        <Route
+          path="Education"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Education />
+            </Suspense>
+          }
+        />
+        <Route
+          path="Experience"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <WorkingExperience />
+            </Suspense>
+          }
+        />
+        <Route
+          path="Achievement"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Achievement />
+            </Suspense>
+          }
+        />
+        <Route
+          path="Publication"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <Publications />
+            </Suspense>
+          }
+        />
+        <Route
+          path="GetInTouch"
+          element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <GetInTouch />
+            </Suspense>
+          }
+        />
       </Routes>
     </ApplicationContext.Provider>
   );

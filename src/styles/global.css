@@ -23,22 +23,23 @@ body {
   background: radial-gradient(50% 50% at 50% 50%, #242d41 0%, #1d2332 100%);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: "#121F3A";
 }
 
-nav ul li {
-  @apply relative pl-10 cursor-pointer transition-all text-sm text-[#C7C7C7] py-6;
+nav .nav-menu a {
+  @apply relative pl-10 cursor-pointer transition-all text-sm text-[#f7f7f7] py-6;
 }
-nav ul li::after {
-  @apply absolute w-8 h-[1px] bg-[#C7C7C7] left-0 top-1/2 -translate-y-1/2 transition-all;
+nav .nav-menu a::after {
+  @apply absolute w-8 h-[1px] bg-[#f7f7f7] left-0 top-1/2 -translate-y-1/2 transition-all;
   content: "";
 }
 
-nav ul li:hover::after {
+nav .nav-menu a:hover::after {
   @apply w-12 bg-white;
 }
 
-nav ul li:hover {
-  @apply pl-16 text-white;
+nav .nav-menu a:hover {
+  @apply pl-16 text-white underline underline-offset-4;
 }
 
 /* Timeline  */

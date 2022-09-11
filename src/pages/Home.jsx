@@ -3,7 +3,8 @@ import React from "react";
 import Email from "../components/SocialMedia/Email";
 import Facebook from "../components/SocialMedia/Facebook";
 import Linkedin from "../components/SocialMedia/Linkedin";
-import heroPicture from "../images/risalat-siddik.png";
+import heroPicture from "../images/risalat-siddik.webp";
+// import heroPicture from "../images/risalat-siddik.png";
 
 function Home() {
   return (
