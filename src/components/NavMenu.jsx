@@ -5,7 +5,7 @@ const NavMenu = () => {
     <nav className="h-full fixed left-0 z-[4] hidden lg:block">
       <ul className="h-full flex flex-col justify-center">
         <Link to="/">
-          <li>Home</li>
+          <li>Home </li>
         </Link>
 
         <Link to="/about">
