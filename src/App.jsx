@@ -15,6 +15,6 @@ function App() {
   );
 }
 
-navigator.serviceWorker.register("../service-worker.js");
+// navigator.serviceWorker.register("../service-worker.js");
 
 export default App;

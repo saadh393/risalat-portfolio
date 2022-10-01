@@ -4,7 +4,7 @@ import ProgressiveImage from "react-progressive-image-loading";
 import LoadingGif from "../../../images/loading.gif";
 import { DOMAIN, getMonth, getYear } from "../../../Util";
 
-const ExperienceCard = ({ index, data }) => {
+const ExperienceCard = ({ index, data, last }) => {
   let bgColor = index % 2 == 1 ? "bg-[#112D71]/10" : "bg-[#FD3259]/20";
   let border = index % 2 == 1 ? "border-[#0A4DF3]/20" : "border-[#FD3259]/20";
 
@@ -16,7 +16,7 @@ const ExperienceCard = ({ index, data }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       // transition={{ delay: index * 0.2, ease: "linear" }}
-      className="flex gap-3 md:gap-5 items-center relative"
+      className="flex gap-3 md:gap-5 items-center relative card"
     >
       <a
         href={company_website}
@@ -40,7 +40,7 @@ const ExperienceCard = ({ index, data }) => {
         />
       </a>
 
-      <div className="timeline">
+      <div className={`${index != last && "timeline"}`}>
         <div className="w-4 h-4 rounded-full bg-[#487BBC] ring-2 ring-white ring-offset-[#242D41] ring-offset-2"></div>
       </div>
 

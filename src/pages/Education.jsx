@@ -8,7 +8,7 @@ function Education() {
 
   return (
     <motion.div
-      className="flex flex-col items-center py-10 min-h-screen snap-start"
+      className="flex flex-col items-center py-10 scroll-mb-40 min-h-screen h-full snap-start"
       id="Education"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

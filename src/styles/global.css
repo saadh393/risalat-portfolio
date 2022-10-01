@@ -43,11 +43,11 @@ nav .nav-menu a:hover {
 }
 
 /* Timeline  */
-.process .timeline {
+.process .card .timeline {
   /* position: relative; */
 }
 
-.process .timeline::after {
+.process .card .timeline::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -55,6 +55,7 @@ nav .nav-menu a:hover {
   background-color: white;
   transform: translateX(7px) translateY(8px);
 }
-.process .timeline:last {
+.process .card .timeline:last-child:after {
   display: none;
+  content: ".";
 }

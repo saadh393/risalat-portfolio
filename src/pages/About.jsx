@@ -24,7 +24,7 @@ function About() {
   return (
     <motion.div
       key={"about"}
-      className="flex flex-col items-center py-10  snap-start min-h-screen"
+      className="flex flex-col items-center scroll-mb-60 md:py-10 snap-start h-full"
       id="about"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
