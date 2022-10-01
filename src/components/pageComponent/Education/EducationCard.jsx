@@ -12,8 +12,8 @@ const EducationCard = ({ index, data }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: index * 0.2, ease: "linear" }}
+      whileInView={{ opacity: 1 }}
+      // transition={{ delay: index * 0.1, ease: "linear" }}
       className={`cursor-pointer py-4 px-4 ${bgColor} hover:shadow-lg  rounded-md backdrop-blur border ${border} transition-transform hover:scale-105`}
     >
       <h4 className="text-xs  text-[#AAAAAA]">

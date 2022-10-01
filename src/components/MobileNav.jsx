@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Close from "./Close";
 import Hamburger from "./Hamburger";
 
@@ -22,33 +21,33 @@ const MobileNav = ({ setDisplay, display }) => {
             className="h-full flex flex-col text-lg justify-center items-center space-y-8"
             onClick={() => setDisplay(!display)}
           >
-            <Link to="/" className="hover:scale-105 transition-transform active:scale-95">
+            <a href="/#" className="hover:scale-105 transition-transform active:scale-95">
               <li>Home</li>
-            </Link>
+            </a>
 
-            <Link to="/about" className="hover:scale-105 transition-transform active:scale-95">
+            <a href="/#about" className="hover:scale-105 transition-transform active:scale-95">
               <li>About</li>
-            </Link>
+            </a>
 
-            <Link to="/Education" className="hover:scale-105 transition-transform active:scale-95">
+            <a href="/#Education" className="hover:scale-105 transition-transform active:scale-95">
               <li>Education</li>
-            </Link>
+            </a>
 
-            <Link to="/Experience" className="hover:scale-105 transition-transform active:scale-95">
+            <a href="/#Experience" className="hover:scale-105 transition-transform active:scale-95">
               <li>Experience</li>
-            </Link>
+            </a>
 
-            <Link to="/Achievement" className="hover:scale-105 transition-transform active:scale-95">
+            {/* <a href="/#Achievement" className="hover:scale-105 transition-transform active:scale-95">
               <li>Achievement</li>
-            </Link>
+            </a> */}
 
-            <Link to="/Publication" className="hover:scale-105 transition-transform active:scale-95">
+            <a href="/#Publication" className="hover:scale-105 transition-transform active:scale-95">
               <li>Publication</li>
-            </Link>
+            </a>
 
-            <Link to="/GetInTouch" className="hover:scale-105 transition-transform active:scale-95">
+            <a href="/#GetInTouch" className="hover:scale-105 transition-transform active:scale-95">
               <li>Get In Touch</li>
-            </Link>
+            </a>
           </ul>
         </div>
       )}

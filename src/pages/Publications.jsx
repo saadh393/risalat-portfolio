@@ -12,7 +12,8 @@ function Publications() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col items-center h-full py-10 "
+      className="flex flex-col items-center py-10 min-h-screen snap-start"
+      id="Publication"
     >
       <h1 className="text-center text-white font-bold text-4xl mt-10">Publications</h1>
 

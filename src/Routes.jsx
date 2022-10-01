@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { getAchievements, getEducations, getExperiences, getPublications } from "./dataFetch/data";
 import About from "./pages/About";
-import Achievement from "./pages/Achievement";
 import Education from "./pages/Education";
 import GetInTouch from "./pages/GetInTouch";
 import Home from "./pages/Home";
@@ -34,7 +33,14 @@ const ApplicationRoutes = () => {
 
   return (
     <ApplicationContext.Provider value={state}>
-      <Routes key={location.pathname} location={location}>
+      <Home />
+      <About />
+      <Education />
+      <WorkingExperience />
+      {/* <Achievement /> */}
+      <Publications />
+      <GetInTouch />
+      {/* <Routes key={location.pathname} location={location}>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="Education" element={<Education />} />
@@ -42,7 +48,7 @@ const ApplicationRoutes = () => {
         <Route path="Achievement" element={<Achievement />} />
         <Route path="Publication" element={<Publications />} />
         <Route path="GetInTouch" element={<GetInTouch />} />
-      </Routes>
+      </Routes> */}
     </ApplicationContext.Provider>
   );
 };

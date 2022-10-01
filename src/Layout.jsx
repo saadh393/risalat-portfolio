@@ -7,10 +7,14 @@ function Layout({ children }) {
   const [display, setDisplay] = useState(false);
 
   return (
-    <div className={`min-h-screen h-screen text-white ${display && "overflow-hidden"}`}>
+    <div
+      className={`min-h-screen h-screen text-white ${
+        display && "overflow-hidden"
+      } snap-y snap-mandatory  scroll-smooth overflow-scroll`}
+    >
       <NavMenu />
       <MobileNav display={display} setDisplay={setDisplay} />
-      <section className="max-w-5xl px-6 md:px-8 lg:px-0 h-full mx-auto  relative z-[3] grid place-items-center">
+      <section className="max-w-5xl px-6 md:px-8 lg:px-0 h-full mx-auto  relative z-[3] grid place-items-center ">
         {children}
       </section>
       <Background />

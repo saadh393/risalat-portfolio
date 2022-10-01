@@ -1,22 +1,20 @@
-import { Link } from "react-router-dom";
-
 const NavMenu = () => {
   return (
     <nav className="h-full fixed left-0 z-[4] hidden lg:block">
       <div className="nav-menu h-full flex flex-col justify-center">
-        <Link to="/">Home</Link>
+        <a href="/#home">Home</a>
 
-        <Link to="/about">About</Link>
+        <a href="/#about">About</a>
 
-        <Link to="/Education">Education</Link>
+        <a href="/#Education">Education</a>
 
-        <Link to="/Experience">Experience</Link>
+        <a href="/#Experience">Experience</a>
 
-        <Link to="/Achievement">Achievement</Link>
+        {/* <a href="/#Achievement">Achievement</a> */}
 
-        <Link to="/Publication">Publication</Link>
+        <a href="/#Publication">Publication</a>
 
-        <Link to="/GetInTouch">Get In Touch</Link>
+        <a href="/#GetInTouch">Get In Touch</a>
       </div>
     </nav>
   );
