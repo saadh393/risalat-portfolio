@@ -40,7 +40,7 @@ const ExperienceCard = ({ index, data, last }) => {
         />
       </a>
 
-      <div className={`${index != last && "timeline"}`}>
+      <div className={`${index != 1 && "timeline"}`}>
         <div className="w-4 h-4 rounded-full bg-[#487BBC] ring-2 ring-white ring-offset-[#242D41] ring-offset-2"></div>
       </div>
 
