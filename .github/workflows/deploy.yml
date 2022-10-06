@@ -18,7 +18,7 @@ jobs:
         key: ${{ secrets.SSH_ED25519_KEY }}
         
         script: |
-          cd /var/www/html/analyzen/risalatsiddique.com/new-site/
+          cd /var/www/html/analyzen/risalatsiddique.com/front-end/
           echo "Pulling latest commit"
           git pull origin main
           echo "Install packages"
