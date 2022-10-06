@@ -50,10 +50,34 @@ nav .nav-menu a:hover {
 .process .card .timeline::after {
   content: "";
   position: absolute;
+  height: 150%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(7px) translateY(50%);
+  z-index: -1;
+  bottom: 50%;
+}
+
+.process .card .timelineTop::after {
+  content: "";
+  position: absolute;
   height: 100%;
   width: 2px;
   background-color: white;
-  transform: translateX(7px) translateY(8px);
+  transform: translateX(7px) translateY(50%);
+  z-index: -1;
+  bottom: 0;
+}
+
+.process .card .timelineBottom::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(7px) translateY(0);
+  z-index: -1;
+  top: -50%;
 }
 .process .card .timeline:last-child:after {
   display: none;
