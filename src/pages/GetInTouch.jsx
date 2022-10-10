@@ -25,7 +25,7 @@ function GetInTouch() {
               </svg>
             }
             label="Facebook"
-            color={"bg-[#FD3259]"}
+            color={"bg-[#4267B2]"}
             index={0}
             href="https://web.facebook.com/siddique.risalat"
           />
@@ -39,7 +39,7 @@ function GetInTouch() {
               </svg>
             }
             label="Linkedin"
-            color={"bg-[#405FDB]"}
+            color={"bg-[#0e76a8]"}
             index={1}
             href="https://www.linkedin.com/in/risalat-siddique/"
           />
@@ -53,7 +53,7 @@ function GetInTouch() {
               </svg>
             }
             label="Email"
-            color={"bg-[#1BD741]"}
+            color={"bg-[#FD3259]"}
             index={2}
             href="mailto:risalat@gmail.com"
           />
@@ -61,9 +61,6 @@ function GetInTouch() {
         <div>
           <h2 className="font-medium text-3xl">Come to see me !</h2>
           <h4 className=" my-2">Dhaka, Bangladesh</h4>
-          <a href="" className="underline">
-            Open on Goolge Map
-          </a>
         </div>
       </div>
     </div>
