@@ -3,7 +3,7 @@ export const DOMAIN = "https://api.risalatsiddique.com";
 
 // export const DOMAIN = "http://localhost:1337";
 export const AUTH =
-  "Bearer 488c6fcd465f58b8ebb8f540babd814a043e6b73245a6615e4d751d4317b0913d7ecf4a2dce3561d94def4adb5d79238492e90c4467ff2124333c0fa67d430e12fcb34301c2dedc810a72e137e146e51567c7f25f9038f81ba9ebf7a9078b665bbae827eeab89e60a7bc83604d86c48fd703650e5a29c2d4a816a12c4aeba82d";
+  "Bearer 1b960de0b0e7d0547ee867eb436f1836e07835bb206544e21d6182c45d03d2cec480ed4969400674e619e951c559dc53706d5d26aa0a19f54767abb4ec994225f3892078d2bd23a6faad5f34e7189295aff8d8e0bb4a86d34c4ea474344211dac4c69ad9f1b0ac4e3e4f73e3c43a025df80703d993a14ed63ab6e7dde629f320";
 export const getYear = (year) => {
   return new Date(year).getUTCFullYear();
 };
