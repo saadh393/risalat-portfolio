@@ -12,7 +12,9 @@ const NavMenu = () => {
 
         {/* <a href="/#Achievement">Achievement</a> */}
 
-        <a href="/#Publication">Publication</a>
+        <a href="/#Publication">Publications & Articles</a>
+
+        <a href="/#videos-and-Appearances">Videos and Appearances</a>
 
         <a href="/#GetInTouch">Get In Touch</a>
       </div>

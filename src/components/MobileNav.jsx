@@ -42,7 +42,11 @@ const MobileNav = ({ setDisplay, display }) => {
             </a> */}
 
             <a href="/#Publication" className="hover:scale-105 transition-transform active:scale-95">
-              <li>Publication</li>
+              <li>Publications & Articles</li>
+            </a>
+
+            <a href="/#videos" className="hover:scale-105 transition-transform active:scale-95">
+              <li>Videos and Appearances</li>
             </a>
 
             <a href="/#GetInTouch" className="hover:scale-105 transition-transform active:scale-95">

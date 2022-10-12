@@ -62,3 +62,19 @@ export const getPublications = async (setState) => {
   // });
   return { publications: data.data };
 };
+
+export const getVideosAndAppearances = async (setState) => {
+  const res = await fetch(DOMAIN + "/api/videos-and-Appearances?populate=thumbnail", {
+    method: "get",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: AUTH,
+    },
+  });
+  const data = await res.json();
+
+  // setState((currentState) => {
+  //   return { ...currentState, publication: data.data };
+  // });
+  return { getVideosAndAppearances: data.data };
+};

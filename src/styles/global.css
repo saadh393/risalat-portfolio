@@ -83,3 +83,12 @@ nav .nav-menu a:hover {
   display: none;
   content: ".";
 }
+
+.title-bar {
+  position: relative;
+}
+
+.title-bar::after {
+  @apply absolute left-0 h-full w-1;
+  background-color: "#FFCC30";
+}

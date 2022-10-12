@@ -8,9 +8,8 @@ function Layout({ children }) {
 
   return (
     <div
-      className={`min-h-screen h-screen text-white ${
-        display && "overflow-hidden"
-      } snap-y snap-mandatory  scroll-smooth overflow-scroll`}
+      className={`min-h-screen h-screen text-white ${display && "overflow-hidden"}   scroll-smooth overflow-scroll`}
+      style={{ scrollSnapType: "y mandatory " }}
     >
       <NavMenu />
       <MobileNav display={display} setDisplay={setDisplay} />
