@@ -1,6 +1,6 @@
 const NavMenu = () => {
   return (
-    <nav className="h-full fixed left-0 z-[4] hidden lg:block">
+    <nav className="h-full fixed left-0 z-[4] -translate-x-full  xl:translate-x-0 transition-transform">
       <div className="nav-menu h-full flex flex-col justify-center">
         <a href="/#home">Home</a>
 

@@ -8,7 +8,7 @@ const Hamburger = () => {
       height="100%"
       viewBox="0 0 16 15"
       data-state="closed"
-      className="mr-4 md:hidden block z-[99] relative"
+      className="mr-4 lg:hidden block z-[99] relative"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
