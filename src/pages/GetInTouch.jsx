@@ -3,7 +3,7 @@ import React from "react";
 
 function GetInTouch() {
   return (
-    <div className="flex flex-col items-center py-8 justify-center min-h-screen snap-start" id="GetInTouch">
+    <div className="max-w-5xl flex flex-col items-center py-8 justify-center min-h-screen snap-start" id="GetInTouch">
       <h1 className="text-center text-white font-bold text-4xl">Get In touch</h1>
       <h4 className="text-center text-white font-thin text-2xl mt-2">I would love to hear from you </h4>
 

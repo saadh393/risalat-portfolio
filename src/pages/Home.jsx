@@ -8,7 +8,7 @@ import heroPicture from "../images/risalat-siddik.webp";
 
 function Home() {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center min-h-screen h-full snap-start" id="home">
+    <div className="max-w-5xl flex flex-col-reverse md:flex-row items-center min-h-screen h-full snap-start" id="home">
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}

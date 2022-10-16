@@ -20,19 +20,19 @@ const Background = () => {
       {/* Bottom Red Overlay */}
       <motion.div
         animate={{ scale: [1, 1.5, 1.8], x: [-100, 150, 80], y: [-20, 10, 0, 0] }}
-        transition={{ duration: 10, type: "tween", repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
+        transitiosetLoadedn={{ duration: 10, type: "tween", repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
         className="w-[250px] h-[250px] z-[1] bg-[#FA3A3A] rounded-full -bottom-20 -left-20 blur-3xl opacity-20 absolute"
       ></motion.div>
 
-      {/* Earth */}
+      {/* Earth
       <motion.img
         variants={load ? { y: 0 } : { y: 300 }}
         onLoad={() => setLoaded(true)}
-        className="absolute left-0 bottom-0 object-contain z-[1] select-none"
+        className="absolute left-0 bottom-0 object-contain z-[100] select-none"
         style={{ filter: "drop-shadow(0px -18px 80px rgba(10,77,243,.35))" }}
         src={EarthImage}
         alt="Earth Image Background"
-      />
+      /> */}
       <motion.div
         initial={{ scale: 0, x: 0 }}
         animate={{ scale: [1, 0.5, 0.8], x: [-220, 250, 100], y: [-20, 10, 0, 0] }}

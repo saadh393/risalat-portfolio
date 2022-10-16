@@ -7,7 +7,7 @@ function WorkingExperience() {
   const { experiences } = useContext(ApplicationContext);
 
   return (
-    <div className="flex flex-col items-center py-10 h-full pb-20 scroll-mb-60 snap-start" id="Experience">
+    <div className="max-w-5xl flex flex-col items-center py-10 h-full pb-20 scroll-mb-96 snap-start" id="Experience">
       <h1 className="text-center text-white font-bold text-4xl  mt-10">
         Working <span className="text-[#FD3259]">Experience</span>
       </h1>
