@@ -21,7 +21,7 @@ function Layout({ children }) {
       <motion.img
         variants={load ? { y: 0 } : { y: 300 }}
         onLoad={() => setLoaded(true)}
-        className="fixed left-0 -bottom-0 scale-150 md:scale-100 object-contain z-[100] select-none "
+        className="fixed left-0 -bottom-0 scale-150 md:scale-75 md:translate-y-7  object-contain z-[100] select-none "
         style={{ filter: "drop-shadow(0px 18px 80px rgba(10,77,243,1))" }}
         src={EarthImage}
         alt="Earth Image Background"
