@@ -39,8 +39,14 @@ function Videos() {
               arrows: false,
               pagination: false,
               padding: 0,
+              breakpoints: {
+                640: {
+                  perPage: 1,
+                  focus: "center",
+                },
+              },
               rewind: true,
-              autoplay: true,
+              // autoplay: true,
             }}
           >
             {getVideosAndAppearances &&

@@ -6,7 +6,6 @@ import { DOMAIN } from "../../../Util";
 
 const FeaturedCard = ({ data, index }) => {
   const { title, author, link, thumbnail, published_date } = data;
-  console.log(thumbnail?.data);
   const url = thumbnail?.data?.attributes
     ? DOMAIN + thumbnail?.data?.attributes.url
     : "https://dummyimage.com/600x400/031f47/ffffff&text=Image+not+found";
@@ -17,7 +16,7 @@ const FeaturedCard = ({ data, index }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       // transition={{ delay: index * 0.2, ease: "linear" }}
-      className={`cursor-pointer flex flex-col items-center max-w-xs h-fit hover:shadow-lg rounded-md overflow-hidden transition-transform hover:scale-105`}
+      className={`mx-auto cursor-pointer flex flex-col items-center max-w-xs h-fit hover:shadow-lg rounded-md overflow-hidden transition-transform hover:scale-105`}
     >
       <ProgressiveImage
         preview={LoadingGif}

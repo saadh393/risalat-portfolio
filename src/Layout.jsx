@@ -27,9 +27,7 @@ function Layout({ children }) {
         alt="Earth Image Background"
       />
       {/* max-w-5xl */}
-      <section className=" px-6 md:px-8 lg:px-0 h-full mx-auto  relative z-[3] grid place-items-center ">
-        {children}
-      </section>
+      <section className=" px-6 md:px-8 lg:px-0 mx-auto  relative z-[3] grid place-items-center ">{children}</section>
       <Background />
     </div>
   );
