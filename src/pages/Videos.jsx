@@ -42,7 +42,7 @@ function Videos() {
               breakpoints: {
                 640: {
                   perPage: 1,
-                  focus: "center",
+                  gap: 0,
                 },
               },
               rewind: true,

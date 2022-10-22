@@ -16,7 +16,7 @@ const ExperienceCard = ({ index, data, last }) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       // transition={{ delay: index * 0.2, ease: "linear" }}
-      className="flex gap-3 md:gap-5 items-center relative card"
+      className="flex flex-col md:flex-row gap-5 items-center relative card"
     >
       <a
         href={company_website}
