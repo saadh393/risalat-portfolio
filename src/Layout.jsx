@@ -13,7 +13,7 @@ function Layout({ children }) {
       className={`min-h-screen h-screen text-white ${
         display && "overflow-hidden"
       } w-full  scroll-smooth overflow-scroll`}
-      style={{ scrollSnapType: "y mandatory " }}
+      style={{ scrollSnapType: "y proximity " }}
     >
       <NavMenu />
       <MobileNav display={display} setDisplay={setDisplay} />
