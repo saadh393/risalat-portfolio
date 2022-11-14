@@ -14,7 +14,7 @@ const NavMenu = () => {
 
         <a href="/#Publication">Publications & Articles</a>
 
-        <a href="/#videos-and-Appearances">Videos and Appearances</a>
+        <a href="/#videos-and-Appearances">In the News</a>
 
         <a href="/#GetInTouch">Get In Touch</a>
       </div>

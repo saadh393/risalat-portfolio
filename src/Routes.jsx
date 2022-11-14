@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import {
-  getAchievements,
-  getEducations,
-  getExperiences,
-  getPublications,
-  getVideosAndAppearances,
-} from "./dataFetch/data";
+import { getAchievements, getEducations, getExperiences, getPublications, getVideosAndAppearances } from "./dataFetch/data";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import GetInTouch from "./pages/GetInTouch";
@@ -19,20 +13,13 @@ export const ApplicationContext = React.createContext();
 
 const ApplicationRoutes = () => {
   const location = useLocation();
-  const initalState = localStorage.getItem("state")
-    ? localStorage.getItem("state")
-    : { achievements: [], educations: [], experiences: [], publications: [], getVideosAndAppearances: [] };
+  const initalState = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) : { achievements: [], educations: [], experiences: [], publications: [], getVideosAndAppearances: [] };
+  console.log(initalState.educations);
   const [state, setState] = useState(initalState);
 
   useEffect(() => {
     let finalObj = {};
-    Promise.all([
-      getEducations(),
-      getExperiences(),
-      getAchievements(),
-      getPublications(),
-      getVideosAndAppearances(),
-    ]).then((values) => {
+    Promise.all([getEducations(), getExperiences(), getAchievements(), getPublications(), getVideosAndAppearances()]).then((values) => {
       values.map((value) => {
         value.achievements && (finalObj.achievements = value.achievements);
         value.educations && (finalObj.educations = value.educations);

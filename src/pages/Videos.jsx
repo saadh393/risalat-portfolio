@@ -25,51 +25,15 @@ function Videos() {
       className="max-w-3xl xl:max-w-5xl flex flex-col items-center py-10 h-full w-full snap-start scroll-mb-80"
       id="videos-and-Appearances"
     >
-      <h1 className="text-center text-white font-bold text-4xl mt-10">Videos and Appearances</h1>
+      <h1 className="text-center text-white font-bold text-4xl mt-10">In the News</h1>
 
-      <div className="w-full self-start my-8">
-        <h2 className="start my-6 font-medium text-lg title-bar">Featured In</h2>
-        <div className="mx-auto justify-center lg:justify-between">
-          <Splide
-            aria-label="My Favorite Images"
-            className="p-0"
-            options={{
-              perPage: 3,
-              gap: 20,
-              arrows: false,
-              pagination: false,
-              padding: 0,
-              breakpoints: {
-                640: {
-                  perPage: 1,
-                  gap: 0,
-                },
-              },
-              rewind: true,
-              // autoplay: true,
-            }}
-          >
-            {getVideosAndAppearances &&
-              getVideosAndAppearances
-                .filter((item) => item.attributes.Featured)
-                .map((publication, index) => (
-                  <SplideSlide>
-                    <FeaturedCard key={publication.id} data={publication.attributes} index={index} />{" "}
-                  </SplideSlide>
-                ))}
-          </Splide>
-        </div>
-      </div>
-
-      <div className="w-full self-start my-8">
-        <h2 className="start my-6 font-medium text-lg title-bar">Videos</h2>
-        <div className="mx-auto justify-center lg:justify-between gap-x-5 gap-5 flex flex-wrap gap-y-10">
+      <div className="w-full self-start my-10">
+        {/* <div className="mx-auto justify-center lg:justify-between gap-x-5 gap-5 flex flex-wrap gap-y-10"> */}
+        <div className="mx-auto gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {getVideosAndAppearances &&
             getVideosAndAppearances
-              .filter((item) => item.attributes.Type == "Video")
-              .map((publication, index) => (
-                <FeaturedCard key={publication.id} data={publication.attributes} index={index} />
-              ))}
+              // .filter((item) => item.attributes.Type == "Video")
+              .map((publication, index) => <FeaturedCard key={publication.id} data={publication.attributes} index={index} />)}
         </div>
       </div>
     </motion.div>

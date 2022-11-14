@@ -33,7 +33,7 @@ function About() {
     >
       <h3 className="text-center text-[#FFCC30] uppercase text-2xl mt-10">More AbouT</h3>
       <h1 className="text-center text-white font-bold text-4xl ">Risalat Siddique</h1>
-      <motion.div className="mx-auto py-3 mt-10 space-y-4">
+      <motion.div className="mx-auto py-3 mt-10 space-y-4 text-justify">
         <ReactMarkdown>{about}</ReactMarkdown>
       </motion.div>
     </motion.div>
