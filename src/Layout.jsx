@@ -9,19 +9,15 @@ function Layout({ children }) {
   const [display, setDisplay] = useState(false);
   const [load, setLoaded] = useState(false);
   return (
-    <div
-      className={`min-h-screen h-screen text-white ${
-        display && "overflow-hidden"
-      } w-full  scroll-smooth overflow-scroll`}
-      style={{ scrollSnapType: "y proximity " }}
-    >
+    // style={{ scrollSnapType: "y proximity " }}
+    <div className={`min-h-screen h-screen text-white ${display && "overflow-hidden"} w-full  scroll-smooth overflow-scroll`}>
       <NavMenu />
       <MobileNav display={display} setDisplay={setDisplay} />
       {/* Earth */}
       <motion.img
         variants={load ? { y: 0 } : { y: 300 }}
         onLoad={() => setLoaded(true)}
-        className="fixed left-0 -bottom-0 scale-150 md:scale-75 md:translate-y-7  object-contain z-[100] select-none "
+        className="fixed left-0 -bottom-0 scale-150 md:scale-75 md:translate-y-7 object-contain z-[100] select-none "
         style={{ filter: "drop-shadow(0px 18px 80px rgba(10,77,243,1))" }}
         src={EarthImage}
         alt="Earth Image Background"
