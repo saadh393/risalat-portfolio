@@ -76,5 +76,5 @@ export const getVideosAndAppearances = async (setState) => {
   // setState((currentState) => {
   //   return { ...currentState, publication: data.data };
   // });
-  return { getVideosAndAppearances: data.data };
+  return { getVideosAndAppearances: data.data.reverse() };
 };

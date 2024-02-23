@@ -17,7 +17,7 @@ function Home() {
         className="w-full flex-1"
       >
         <h3 className="text-base lg:text-xl text-slate-200 ">Hello I am</h3>
-        <h1 className="text-slate-50 font-black text-4xl md:text-5xl my-4">Risalat Siddique</h1>
+        <h1 className="text-slate-50 font-black text-4xl md:text-5xl my-4">Dr. Risalat Siddique</h1>
         <p className="text-base lg:text-lg text-slate-200 font-light leading-6">
           Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development
           Sectors
@@ -27,7 +27,7 @@ function Home() {
             <a
               href="https://web.facebook.com/siddique.risalat"
               target="_blank"
-              title="Risalat Siddique Facebook Profile"
+              title="Dr. Risalat Siddique Facebook Profile"
             >
               <Facebook />
             </a>
@@ -37,7 +37,7 @@ function Home() {
             <a
               href="https://www.linkedin.com/in/risalat-siddique/"
               target="_blank"
-              title="Risalat Siddique Linkedin Profile"
+              title="Dr. Risalat Siddique Linkedin Profile"
             >
               <Linkedin />
             </a>
