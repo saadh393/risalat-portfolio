@@ -19,8 +19,8 @@ function Home() {
         <h3 className="text-base lg:text-xl text-slate-200 ">Hello I am</h3>
         <h1 className="text-slate-50 font-black text-4xl md:text-5xl my-4">Dr. Risalat Siddique</h1>
         <p className="text-base lg:text-lg text-slate-200 font-light leading-6">
-          Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development
-          Sectors
+          A unique combination of being a Doctor of Business Administration in Digital Transformation from IBA, DU and a
+          multi-country serial learntrepreneur in FinTech, Brand, Advertising and Social & Infrastructure Development.
         </p>
         <ul className="flex gap-2 my-6">
           <li>
