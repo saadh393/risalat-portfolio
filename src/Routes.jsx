@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { getAchievements, getEducations, getExperiences, getPublications, getVideosAndAppearances } from "./dataFetch/data";
+import {
+  getAchievements,
+  getEducations,
+  getExperiences,
+  getPublications,
+  getVideosAndAppearances,
+} from "./dataFetch/data";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import GetInTouch from "./pages/GetInTouch";
@@ -11,15 +17,38 @@ import WorkingExperience from "./pages/WorkingExperience";
 
 export const ApplicationContext = React.createContext();
 
+const defaultState = {
+  achievements: [],
+  educations: [],
+  experiences: [],
+  publications: [],
+  getVideosAndAppearances: [],
+};
+
 const ApplicationRoutes = () => {
-  const location = useLocation();
-  const initalState = localStorage.getItem("state") ? JSON.parse(localStorage.getItem("state")) : { achievements: [], educations: [], experiences: [], publications: [], getVideosAndAppearances: [] };
-  console.log(initalState.educations);
-  const [state, setState] = useState(initalState);
+  // const location = useLocation();
+  const initalState = localStorage.getItem("state")
+    ? JSON.parse(localStorage.getItem("state"))
+    : { achievements: [], educations: [], experiences: [], publications: [], getVideosAndAppearances: [] };
+
+  const [state, setState] = useState(initalState || defaultState);
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const element = document.getElementById(window.location.hash.replace("#", ""));
+      element && element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [window?.location?.hash]);
 
   useEffect(() => {
     let finalObj = {};
-    Promise.all([getEducations(), getExperiences(), getAchievements(), getPublications(), getVideosAndAppearances()]).then((values) => {
+    Promise.all([
+      getEducations(),
+      getExperiences(),
+      getAchievements(),
+      getPublications(),
+      getVideosAndAppearances(),
+    ]).then((values) => {
       values.map((value) => {
         value.achievements && (finalObj.achievements = value.achievements);
         value.educations && (finalObj.educations = value.educations);
