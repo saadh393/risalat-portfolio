@@ -1,16 +1,26 @@
 import { AnimatePresence } from "framer-motion";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import ApplicationRoutes from "./Routes";
+import Basis from "./pages/Basis";
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <AnimatePresence>
-          <ApplicationRoutes />
-        </AnimatePresence>
-      </Layout>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <AnimatePresence>
+                <ApplicationRoutes />
+              </AnimatePresence>
+            </Layout>
+          }
+        />
+
+        <Route path="/basis" element={<Basis />} />
+      </Routes>
     </Router>
   );
 }
