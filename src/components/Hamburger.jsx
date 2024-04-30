@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hamburger = () => {
+const Hamburger = ({ color = "white" }) => {
   return (
     <svg
       id="hamburger"
@@ -19,7 +19,7 @@ const Hamburger = () => {
         width="8.85718"
         height="1.49418"
         rx="0.747088"
-        fill="#fff"
+        fill={color}
       ></rect>
       <rect
         className="transition-all"
@@ -29,7 +29,7 @@ const Hamburger = () => {
         width="15.5153"
         height="1.49418"
         rx="0.747088"
-        fill="#fff"
+        fill={color}
         transform="rotate(0 0 0)"
       ></rect>
       <rect
@@ -40,7 +40,7 @@ const Hamburger = () => {
         width="11.4889"
         height="1.49418"
         rx="0.747088"
-        fill="#fff"
+        fill={color}
         transform="rotate(0 0 0)"
       ></rect>
     </svg>

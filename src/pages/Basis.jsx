@@ -1,7 +1,13 @@
+import Hamburger from "../components/Hamburger";
+import Navigation from "../components/basis/Navigation";
+import "../styles/basis.css";
+
 export default function Basis() {
   return (
     <div>
-      <div className="basis-banner">
+      <Navigation />
+
+      <div className="basis-banner mt-[60px]">
         <div className="max-w-7xl mx-auto px-3 md:px-8 h-full items-center justify-center gap-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
           <div className="self-start md:self-center flex-1 text-center md:text-left text-white h-fit order-2 md:order-1 ">
             <h2 className="font-bold text-4xl lg:text-5xl">ড. মুহম্মদ রিসালাত সিদ্দীক</h2>
@@ -33,7 +39,7 @@ export default function Basis() {
           কী সেটা জানবার পূর্ন অধিকার বর্তায়। আর প্রতিটি প্রার্থীরই তার এই পরিকল্পনা নিয়ে স্বচ্ছতা ও জবাবদিহিতা থাকতে
           হবে। আমাদের চাই সবাইকে একসাথে নিয়ে একটি সামগ্রিক ভিশন।
         </p>
-        <h2>আমাদের টানাপোড়েন এর সংসার:</h2>
+        <h2 id="টানাপোড়েন">আমাদের টানাপোড়েন এর সংসার:</h2>
         <p>
           আপনারা খেয়াল করেছেন কী না, আমাদের তথ্যপ্রযুক্তি ব্যবসায় আমরা কিন্তু একটা অদ্ভুত সমস্যার মধ্য দিয়ে যাই। আমরা
           একটি ইন্টেলেকচুয়াল সোসাইটি বা বুদ্ধিজীবি সমাজের অংশ হওয়ায় কেমন যেন অনেকটা একটা মধ্যবিত্ত টাইপ সমস্যায় আমরা
@@ -154,7 +160,7 @@ export default function Basis() {
           থেকে একজন পলিসি ও ব্র্যান্ডিং এক্সপার্ট হিসাবে আমি ড. মুহম্মদ রিসালাত সিদ্দীক, এসেছি আপনাদের সামনে।
         </p>
 
-        <h2>কে এই ড. মুহম্মদ রিসালাত সিদ্দীক?</h2>
+        <h2 id="কে">কে এই ড. মুহম্মদ রিসালাত সিদ্দীক?</h2>
         <p>
           আমি ড. মুহম্মদ রিসালাত সিদ্দীক, দ্যা ম্যান অফ স্টীল (চেয়ারম্যান), অ্যানালাইজেন বাংলাদেশ লিমিটেড। ঢাকা
           ইউনিভার্সিটির আইবিএ থেকে ডিজিটাল ট্রান্সফোর্মেশন বা ডিজিটাল রূপান্তর নিয়ে কাজ করে আমি আমার ডক্টরেট কম্পলিট
@@ -200,7 +206,7 @@ export default function Basis() {
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-        <div className="flex gap-8 py-8">
+        <div className="flex flex-wrap gap-8 py-8 max-w-full w-full">
           <img
             src="https://teamsmart.tech/wp-content/uploads/2024/04/SCB_Agrow_Award_51b6890a0b-300x199.webp"
             alt=""
@@ -217,7 +223,7 @@ export default function Basis() {
           প্রাপ্তির ঝুলিতে।
         </b>
 
-        <h2>বেসিস এ আমার কর্মপরিধি:</h2>
+        <h2 id="কর্মপরিধি">বেসিস এ আমার কর্মপরিধি:</h2>
         <p>
           বেসিস এ অন্তুর্ভূক্ত হবার পর কখনো সদস্য, কখনো কো-চেয়ারম্যান, কখনো চেয়ারম্যান হিসেবে পলিসি অ্যাডভোকেসি নিয়ে
           আমার একটি সমৃদ্ধ অভিজ্ঞতা হয়েছে। বেসিস-এ ডিজিটাল মার্কেটিং স্ট্যান্ডিং কমিটির চেয়ারম্যান হিসেবে ডিজিটাল
@@ -237,7 +243,7 @@ export default function Basis() {
           ডিজিটাল মার্কেটিং সার্টিফিকেশন এসেসমেন্ট পদ্ধতি তৈরী নিয়েও আমার কাজ করা হয়েছে।
         </p>
 
-        <h2>পরিশেষেঃ</h2>
+        <h2 id="পরিশেষে">পরিশেষেঃ</h2>
 
         <p>
           বেসিস এ এখন প্রয়োজন, সকল দলমতের উর্ধ্বে উঠে, এসকল নতুন নতুন সেক্টরগুলোর নিজস্ব চাহিদা অনুযায়ী নীতি নির্ধারণ

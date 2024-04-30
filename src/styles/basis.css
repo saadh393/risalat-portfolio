@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  scroll-margin-top: 100px;
+  scroll-behavior: smooth;
+}
+
+/* Basis */
+
+.basis-banner {
+  @apply min-h-[550px] h-[550px] bg-cover  bg-no-repeat relative w-full;
+  background-image: url("/images/basis/banner-1.jpg");
+}
+
+iframe {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.basis-content {
+  font-family: "Noto Sans Bengali", Sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #67469c;
+  line-height: 35px;
+}
+.basis-content p {
+  margin-bottom: 1rem;
+}
+
+.basis-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.basis-content h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.basis-nav-container {
+  @apply h-10 w-10 lg:w-full lg:h-auto right-5 lg:right-0 top-5 lg:top-0 rounded-md lg:rounded-none bg-[#53398e] lg:bg-white ring ring-white/50 lg:ring-0;
+}
+.basis-hamburger {
+  @apply lg:hidden p-2  text-white rounded-md;
+}
+.basis-nav {
+  @apply hidden lg:flex justify-center items-center;
+}
+
+.basis-nav a {
+  @apply px-4 py-4 text-gray-800  mx-2;
+}
+
+.basis-nav .active {
+  @apply border-b-4 border-[#53398e];
+}
+
+.basis-mobile-nav {
+  @apply hidden;
+}
+
+@media (max-width: 768px) {
+  .basis-banner {
+    @apply min-h-[760px] h-[760px] bg-cover bg-no-repeat;
+    background-image: url("/images/basis/banner-2.jpg");
+    background-position: center -50px;
+    background-color: #53398e;
+  }
+
+  .avater-img {
+    @apply mx-auto;
+    max-height: 450px;
+  }
+
+  .basis-mobile-nav {
+    @apply hidden transition-all opacity-0 fixed top-0 left-0 w-full h-full bg-black/60 z-50;
+  }
+
+  .basis-menus {
+    @apply w-5/6 bg-white h-full fixed top-0 right-0 z-50 flex flex-col justify-center items-end text-right transition-all ease-in-out duration-300 translate-x-full;
+  }
+
+  .basis-menus a {
+    @apply py-3 px-6 text-lg;
+  }
+}
