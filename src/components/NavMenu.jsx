@@ -16,6 +16,8 @@ const NavMenu = () => {
 
         <a href="/#videos-and-Appearances">In the News</a>
 
+        <a href="/basis">Basis EC Election 2024- 26</a>
+
         <a href="/#GetInTouch">Get In Touch</a>
       </div>
     </nav>

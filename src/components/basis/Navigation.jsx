@@ -23,6 +23,12 @@ export default function Navigation() {
 
           document.querySelectorAll(".basis-nav a")[index].classList.add("active");
         }
+
+        if (scrollPosition < positions[0]) {
+          document.querySelectorAll(".basis-nav a").forEach((link) => {
+            link.classList.remove("active");
+          });
+        }
       });
     });
   }, []);
@@ -105,7 +111,9 @@ export default function Navigation() {
       <div className="basis-mobile-nav" ref={mobileNavContainer}>
         <div className="basis-menus " ref={mobileNav}>
           {menuItems.map((item, index) => (
-            <a href={`/basis#${item.link}`}>{item.name}</a>
+            <a href={`/basis#${item.link}`} onClick={handleClick}>
+              {item.name}
+            </a>
           ))}
         </div>
       </div>
