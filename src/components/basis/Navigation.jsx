@@ -52,7 +52,7 @@ export default function Navigation() {
         setTimeout(() => {
           mobileNavContainer.current.style.opacity = "1";
           mobileNav.current.style.transform = "translateX(0%)";
-        }, 200);
+        }, 300);
         setIsOpen(true);
       }
 
@@ -61,18 +61,16 @@ export default function Navigation() {
         mobileNav.current.style.transform = "translateX(100%)";
         mobileNavContainer.current.style.opacity = "0";
         setTimeout(() => {
-          mobileNavContainer.current.style.display = "block";
+          mobileNavContainer.current.style.display = "none";
         }, 300);
         setIsOpen(false);
       }
-
-      console.log();
     }
   };
 
   return (
     <div>
-      <nav className="fixed top-0 w-full z-[999] shadow-md basis-nav-container" onClick={handleClick}>
+      <nav className="z-[999] shadow-md basis-nav-container" onClick={handleClick}>
         <div className="basis-hamburger cursor-pointer group">
           <div className="transition-all group-hover:scale-95">{isOpen ? <Close /> : <Hamburger />}</div>
         </div>

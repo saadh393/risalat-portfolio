@@ -28,10 +28,10 @@ iframe {
   font-weight: 400;
   font-size: 22px;
   color: #67469c;
-  line-height: 35px;
 }
 .basis-content p {
   margin-bottom: 1rem;
+  color: #333;
 }
 
 .basis-content h2 {
@@ -49,10 +49,10 @@ iframe {
 }
 
 .basis-nav-container {
-  @apply h-10 w-10 lg:w-full lg:h-auto right-5 lg:right-0 top-5 lg:top-0 rounded-md lg:rounded-none bg-[#53398e] lg:bg-white ring ring-white/50 lg:ring-0;
+  @apply fixed h-10 w-10 lg:w-full lg:h-auto right-5 lg:right-0 top-5 lg:top-0 rounded-md lg:rounded-none bg-[#53398e] lg:bg-white ring ring-white/50 lg:ring-0 transition-all;
 }
 .basis-hamburger {
-  @apply lg:hidden p-2  text-white rounded-md;
+  @apply lg:hidden p-2 text-white rounded-md;
 }
 .basis-nav {
   @apply hidden lg:flex justify-center items-center;
@@ -93,5 +93,9 @@ iframe {
 
   .basis-menus a {
     @apply py-3 px-6 text-lg;
+  }
+
+  .basis-content p {
+    font-size: 1.2rem;
   }
 }
