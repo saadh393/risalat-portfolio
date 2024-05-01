@@ -8,6 +8,26 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    // Section Tracker
+    const sectionIds = ["টানাপোড়েন", "কে", "কর্মপরিধি", "পরিশেষে"];
+    const positions = sectionIds.map((id) => document.getElementById(id).offsetTop);
+
+    window.addEventListener("scroll", () => {
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      positions.forEach((position, index) => {
+        if (scrollPosition >= position) {
+          document.querySelectorAll(".basis-nav a").forEach((link) => {
+            link.classList.remove("active");
+          });
+
+          document.querySelectorAll(".basis-nav a")[index].classList.add("active");
+        }
+      });
+    });
+  }, []);
+
+  useEffect(() => {
     window.addEventListener("resize", () => {
       if (window.innerWidth > 1024) {
         document.body.classList.remove("overflow-hidden");
@@ -83,7 +103,7 @@ export default function Navigation() {
 
       {/* Mobile Nav */}
       <div className="basis-mobile-nav" ref={mobileNavContainer}>
-        <div className="basis-menus" ref={mobileNav}>
+        <div className="basis-menus " ref={mobileNav}>
           {menuItems.map((item, index) => (
             <a href={`/basis#${item.link}`}>{item.name}</a>
           ))}

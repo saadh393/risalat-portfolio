@@ -63,7 +63,7 @@ iframe {
 }
 
 .basis-nav .active {
-  @apply border-b-4 border-[#53398e];
+  @apply border-b-4 bg-[#53398e] text-white font-medium transition-all;
 }
 
 .basis-mobile-nav {
