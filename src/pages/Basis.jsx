@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Hamburger from "../components/Hamburger";
 import Navigation from "../components/basis/Navigation";
 import "../styles/basis.css";
@@ -5,6 +6,23 @@ import "../styles/basis.css";
 export default function Basis() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Dr. Muhammad Risalat Siddique, Ballot 04 </title>
+        <link rel="canonical" href="https://risalatsiddique.com/basis" />
+        <meta
+          name="description"
+          content="দ্যা ম্যান অফ স্টীল (চেয়ারম্যান) | অ্যানালাইজেন বাংলাদেশ লিমিটেড পরিচালক ও সিইও | ক্রান্তি অ্যাসোসিয়েটস লিমিটেড"
+        />
+        <meta
+          property="og:og:description"
+          content="Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development Sectors"
+        />
+        <meta property="og:image" content="/images/basis/meta-image-basis.png" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+      </Helmet>
       <Navigation />
 
       <div className="basis-banner mt-[60px]">
