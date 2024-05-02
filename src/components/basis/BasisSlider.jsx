@@ -43,22 +43,14 @@ export default function BasisSlider() {
       <Slider {...settings}>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-01.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-01.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-02.jpg`}
-            alt=""
-            className="h-[450px]object-cover"
-          />
-        </div>
-
-        <div className="p-4">
-          <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-03.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-02.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
@@ -66,49 +58,64 @@ export default function BasisSlider() {
 
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-04.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-03.jpg`}
+            alt=""
+            className="h-[450px]object-cover"
+          />
+        </div>
+
+        <div className="p-4">
+          <img
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-04.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-05.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-05.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-06.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-06.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-07.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-07.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-08.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-08.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-09.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-09.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
         </div>
         <div className="p-4">
           <img
-            src={`/images/basis/candidates/Profile Template-5_Bangla(1)-10.jpg`}
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-10.jpg`}
+            alt=""
+            className="h-[450px]object-cover"
+          />
+        </div>
+        <div className="p-4">
+          <img
+            src={`/images/basis/candidates/Profile Template-5_Bangla (1)-11.jpg`}
             alt=""
             className="h-[450px]object-cover"
           />
