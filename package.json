@@ -18,6 +18,7 @@
     "react-particles": "^2.2.3",
     "react-progressive-image-loading": "^3.0.3",
     "react-router-dom": "^6.3.0",
+    "react-slick": "^0.30.2",
     "react-tsparticles": "^2.2.3",
     "swiper": "^8.3.2",
     "tsparticles": "^2.2.3",

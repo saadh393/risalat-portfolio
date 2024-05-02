@@ -2,6 +2,9 @@ import { Helmet } from "react-helmet";
 import Hamburger from "../components/Hamburger";
 import Navigation from "../components/basis/Navigation";
 import "../styles/basis.css";
+import "../styles/slick.css";
+import "../styles/slick.theme.css";
+import BasisSlider from "../components/basis/BasisSlider";
 
 export default function Basis() {
   return (
@@ -320,8 +323,9 @@ export default function Basis() {
         ></iframe>
 
         <h2 id="পরিশেষে">পরিশেষেঃ</h2>
-        <img src="/images/basis/group-photo.png" className="w-full object-contain max-h-[500px] mb-6" alt="" />
-        <p>
+
+        <img src="/images/basis/teamphoto.png" className="w-full object-contain max-h-[500px] mb-6" alt="" />
+        <p className="mt-6">
           বেসিস এ এখন প্রয়োজন, সকল দলমতের উর্ধ্বে উঠে, সবাইকে সাথে নিয়ে এই সকল নতুন নতুন সেক্টরগুলোর নিজস্ব চাহিদা
           অনুযায়ী নীতি নির্ধারণ করা। এইজন্য আমাদের লাগবে সেই সকল ইন্ডিভিজ্যুয়াল সেক্টর এক্সপার্টদের নেতৃত্বে নিয়ে আসা
           এবং সকলের মতামত ও প্রয়োজনের উপর ভিত্তি করে তাদের এক্সপার্টিজ ব্যবহার করার সুযোগ তৈরি করে দেয়া।
@@ -339,6 +343,9 @@ export default function Basis() {
           এই পথে, নিজ নিজ আলাদা দক্ষতা ও সক্ষমতা নিয়ে আমার সাথে আছেন আমাদের টিম স্মার্ট এর আরো ১০ জন স্বপ্ন- সারথী।
           আগামী ২০২৪-২০২৬ বেসিস নির্বাচনে আমাদের মেধা, শ্রম ও সময় দিয়ে বেসিস কে গড়ে তুলতে চাই দলমত নির্বিশেষে একটি
           স্বচ্ছ ও জবাবদিহিতামূলক অ্যাসোসিয়েশন যা হবে ‘স্মার্ট বাংলাদেশ ভিশন ২০৪১’ এর নিউক্লিয়াস।
+        </p>
+        <BasisSlider />
+        <p>
           <br />
           <br />
           টিম স্মার্ট - স্মার্ট বেসিস এর পথে, একসাথে।
