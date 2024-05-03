@@ -21,7 +21,7 @@ export default function Basis() {
           property="og:og:description"
           content="Digital Transformation Learntrepreneur for Brands, Finance, Marketing, Social and Infrastructure Development Sectors"
         />
-        <meta property="og:image" content="/images/basis/meta-image-basis.png" />
+        <meta property="og:image" itemprop="image" content="https://risalatsiddique.com/meta-image-2.png" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
