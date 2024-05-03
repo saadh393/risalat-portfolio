@@ -13,6 +13,12 @@
 .basis-banner {
   @apply min-h-[550px] h-[550px] bg-cover  bg-no-repeat relative w-full;
   background-image: url("/images/basis/banner-1.jpg");
+  font-family: "Noto Sans Bengali", sans-serif !important;
+}
+
+.basis-banner h2,
+.basis-banner p {
+  font-family: "Noto Sans Bengali", sans-serif !important;
 }
 
 iframe {
