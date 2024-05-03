@@ -40,7 +40,7 @@ export default function Basis() {
             </p>
             {/* <p className="text-base md:text-xl lg:font-semibold lg:text-2xl my-2">ক্যাটাগরি: জেনারেল</p> */}
             <button className="bg-white font-bold px-6 py-3 shadow-lg rounded-md text-violet-700 text-lg my-4">
-              ব্যালট নং ০৪
+              Ballot No: 04
             </button>
           </div>
 
