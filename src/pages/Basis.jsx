@@ -87,7 +87,7 @@ export default function Basis() {
         </p>
 
         <div>
-          <img src="/images/basis/steps.png" className="object-cover w-full lg:w-8/12 h-full mx-auto my-4 " />
+          <img src="/images/basis/updated-steps.png" className="object-cover w-full lg:w-8/12 h-full mx-auto my-4 " />
         </div>
       </div>
 
