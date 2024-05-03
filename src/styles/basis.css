@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans Bengali", sans-serif;
   scroll-margin-top: 100px;
   scroll-behavior: smooth;
 }
@@ -30,11 +30,13 @@ iframe {
   color: #67469c;
 }
 .basis-content p {
+  font-family: "Noto Sans Bengali", Sans-serif;
   margin-bottom: 1rem;
   color: #333;
 }
 
 .basis-content h2 {
+  font-family: "Noto Sans Bengali", Sans-serif;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-size: 26px;
@@ -42,6 +44,7 @@ iframe {
 }
 
 .basis-content h3 {
+  font-family: "Noto Sans Bengali", Sans-serif;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 22px;
