@@ -29,13 +29,21 @@ const ApplicationRoutes = () => {
   // const location = useLocation();
   const initalState = localStorage.getItem("state")
     ? JSON.parse(localStorage.getItem("state"))
-    : { achievements: [], educations: [], experiences: [], publications: [], getVideosAndAppearances: [] };
+    : {
+        achievements: [],
+        educations: [],
+        experiences: [],
+        publications: [],
+        getVideosAndAppearances: [],
+      };
 
   const [state, setState] = useState(initalState || defaultState);
 
   useEffect(() => {
     if (window.location.hash) {
-      const element = document.getElementById(window.location.hash.replace("#", ""));
+      const element = document.getElementById(
+        window.location.hash.replace("#", "")
+      );
       element && element.scrollIntoView({ behavior: "smooth" });
     }
   }, [window?.location?.hash]);
@@ -54,7 +62,8 @@ const ApplicationRoutes = () => {
         value.educations && (finalObj.educations = value.educations);
         value.experiences && (finalObj.experiences = value.experiences);
         value.publications && (finalObj.publications = value.publications);
-        value.getVideosAndAppearances && (finalObj.getVideosAndAppearances = value.getVideosAndAppearances);
+        value.getVideosAndAppearances &&
+          (finalObj.getVideosAndAppearances = value.getVideosAndAppearances);
       });
       setState(finalObj);
       localStorage.setItem("state", JSON.stringify(finalObj));
