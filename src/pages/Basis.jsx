@@ -52,8 +52,18 @@ export default function Basis() {
           </div>
         </div>
       </div>
-
-      <div className="max-w-7xl mx-auto px-3 md:px-8 text-[#67469c] py-4 basis-content mt-6">
+      <div className="p-4 mt-4">
+        <iframe
+          className="h-[400px] lg:h-[650px] w-full  lg:w-full mx-auto border "
+          src="https://www.youtube.com/embed/SLH09qj4xRs?si=IuttMzsl-SSgXs4b"
+          title="টিম স্মার্ট - স্মার্ট বেসিস এর পথে একসাথে। Dr. Muhammad Risalat Siddique"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div className="max-w-7xl mx-auto px-3 md:px-8 text-[#67469c] py-4 basis-content mt-2">
         <p>
           আপনারা সবাই জানেন, বাংলাদেশের তথ্যপ্রযুক্তি খাত কিন্তু একটি টিপিং পয়েন্ট বা ক্রান্তি লগ্ন পার করছে।
           প্রযুক্তিতে সারা বিশ্ব চতুর্থ শিল্প বিপ্লব পার করে পঞ্চম শিল্প বিপ্লবের দিকে এগোচ্ছে। অপরদিকে আমরাও LDC বা
